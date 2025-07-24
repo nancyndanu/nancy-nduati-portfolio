@@ -147,7 +147,7 @@
       </a>
       
       <!-- Desktop Nav -->
-<div class="hidden md:flex items-center space-x-2">
+<div class="hidden md:flex items-end space-x-2">
   <!-- Nav Links -->
   <nav class="flex space-x-4">
     <a href="#home" class="nav-link hover:text-accent">Home</a>
@@ -184,17 +184,11 @@
 
   <!-- Hero Section -->
   <section id="home" class="min-h-screen pt-32 pb-20 relative overflow-hidden">
-    <!-- Animated gradient background -->
-    <div class="absolute inset-0 overflow-hidden z-0">
-      <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-primary/10 to-accent/10"></div>
-    </div>
-    
-  <section className="min-h-screen bg-[#0f172a] text-[#f0f7ff] flex items-center justify-center px-4">
+  <section className="min-h-screen bg-[#0f172a] text-[#f0f7ff]flex flex-col md:flex-row items-center justify-between">
   <div className="text-center space-y-4">
     <p className="text-sm uppercase tracking-widest text-[#94a3b8]">
       Welcome to my portfolio
     </p>
-
     <h1 className="text-5xl md:text-6xl font-extra bold leading tight">
       Hi, I'm <span className="text-accent">Nancy Ndanu</span>
     </h1>
@@ -208,7 +202,6 @@
       href="#projects"
       className="inline-block mt-6 px-6 py-3 bg-[#3b82f6] text-white rounded-2xl shadow-md hover:bg-[#1e3a8a] transition"
     >
-      View My Work
     </a>
   </div>
 </section>
@@ -228,9 +221,9 @@
         </div>
       </div>
       
-     <div class="md:w-1/2 flex justify-end -mt-26 pr-6" data-aos="fade-left">
+   <div class="flex flex-col md:flex-row items-center justify-between">
   <div class="relative">
-    <img src="assets/nancy-profile-photo.jpg.jpeg" alt="Nancy Ndanu" class="w-160 h-160 rounded-full object-cover mx-auto">
+    <img src="assets/nancy-profile-photo.jpg.jpeg" alt="Nancy Ndanu" class="w-160 h-160 rounded-full object-cover">
     <div class="absolute -bottom-6 -right-6 bg-primary text-white px-4 py-2 rounded-full shadow-lg">
      
     </div>
