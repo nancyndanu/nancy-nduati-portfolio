@@ -168,31 +168,44 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="min-h-screen bg-[#0f172a] text-[#f0f7ff] flex flex-col md:flex-row items-center justify-between px-6 md:px-20 pt-32 pb-20">
-    <div class="w-full md:w-1/2 text-center md:text-left space-y-6">
+ <!-- Hero Section - Fixed Version -->
+<section id="home" class="min-h-screen bg-[#0f172a] text-[#f0f7ff] flex items-center justify-between px-6 md:px-20 pt-32 pb-20">
+  <div class="container mx-auto flex flex-col md:flex-row items-center gap-8">
+    <!-- Text Content - Left Column -->
+    <div class="w-full md:w-1/2 space-y-6 order-2 md:order-1">
       <p class="text-sm uppercase tracking-widest text-[#94a3b8]">Welcome to my portfolio</p>
-      <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">Hi, I'm <span class="text-accent">Nancy Ndanu</span></h1>
-      <p class="text-2xl md:text-3xl font-medium">Information Scientist | Web Developer | IT Consultant</p>
-      <p class="text-md md:text-lg text-[#e2e8f0] max-w-xl leading-relaxed">
-        I build secure, scalable, and user-friendly websites with WordPress, Tailwind, JS & PHP. From designing and developing websites to managing content systems and developing custom business solutions and technical skills to every project. Let's turn your vision into reality.
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
+        Hi, I'm <span class="text-accent">Nancy Ndanu</span>
+      </h1>
+      <p class="text-xl md:text-2xl lg:text-3xl font-medium">
+        Information Scientist | Web Developer | IT Consultant
       </p>
-<div class="flex flex-col sm:flex-row gap-4 mt-6">
-  <a href="#work" 
-     class="px-6 py-3 bg-[#f0f7ff] text-[#1e3a8a] border-2 border-[#1e3a8a] rounded-full font-bold hover:bg-[#1e3a8a] hover:text-white transition text-center">
-    View My Work
-  </a>
+      <p class="text-md md:text-lg text-[#e2e8f0] max-w-xl leading-relaxed">
+        I build secure, scalable, and user-friendly websites with WordPress, Tailwind, JS & PHP. 
+        From designing and developing websites to managing content systems and developing custom 
+        business solutions and technical skills to every project. Let's turn your vision into reality.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 mt-6">
+        <a href="#resume" 
+           class="px-6 py-3 bg-[#f0f7ff] text-[#1e3a8a] border-2 border-[#1e3a8a] rounded-full font-bold hover:bg-[#1e3a8a] hover:text-white transition text-center">
+          View My Work
+        </a>
+        <a href="./assets/Nancy_Ndanu_Resume.pdf" download
+           class="px-6 py-3 bg-[#f0f7ff] text-[#1e3a8a] border-2 border-[#1e3a8a] rounded-full font-bold hover:bg-[#1e3a8a] hover:text-white transition text-center">
+          Download CV
+        </a>
+      </div>
+    </div>
 
-  <a href="./assets/Nancy_Ndanu_Resume.pdf" download
-     class="px-6 py-3 bg-[#f0f7ff] text-[#1e3a8a] border-2 border-[#1e3a8a] rounded-full font-bold hover:bg-[#1e3a8a] hover:text-white transition text-center">
-    Download CV
-  </a>
-</div>
-
-  <!-- Profile Image - Right Aligned & Larger -->
-  <div class="relative mt-10 md:mt-0 md:ml-auto">
-    <img src="assets/nancy-profile-photo.jpg" alt="Nancy Ndanu" 
-         class="w-[320px] h-[420px] md:w-[350px] md:h-[470px] object-cover border-4 border-[#1e3a8a] shadow-2xl rounded-xl hover:scale-105 transition-transform duration-300">
+    <!-- Profile Image - Right Column -->
+    <div class="w-full md:w-1/2 flex justify-center md:justify-end order-1 md:order-2 mb-10 md:mb-0">
+      <div class="relative">
+        <img src="assets/nancy-profile-photo.jpg" alt="Nancy Ndanu" 
+             class="w-[280px] h-[380px] md:w-[320px] md:h-[420px] lg:w-[350px] lg:h-[470px] object-cover border-4 border-[#1e3a8a] shadow-2xl rounded-xl hover:scale-105 transition-transform duration-300">
+      </div>
+    </div>
+  </div>
+</section>
   </div>
  <!-- What I Do Section -->
 <section id="features" class="py-20 bg-dark:bg-[#0f172a]">
