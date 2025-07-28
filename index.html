@@ -188,11 +188,98 @@
       <img src="assets/nancy-profile-photo.jpg" alt="Nancy Ndanu" class="w-[300px] h-[400px] object-cover border-4 border-[#1e3a8a] shadow-lg rounded-xl">
     </div>
   </section>
+<!-- What I Do Section -->
+<section id="services" class="py-20 bg-secondary dark:bg-dark">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl font-bold mb-4 text-primary dark:text-white">What I Do</h2>
+      <p class="max-w-2xl mx-auto text-gray-600 dark:text-gray-300">Solutions tailored to your digital needs</p>
+    </div>
 
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Service 1: Web Development -->
+      <div class="service-card bg-white dark:bg-gray-700 p-8 rounded-xl shadow-md hover:shadow-lg transition">
+        <div class="w-14 h-14 bg-primary/10 dark:bg-accent/10 rounded-full flex items-center justify-center mb-6">
+          <i class="fas fa-code text-2xl text-primary dark:text-accent"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3 text-primary dark:text-white">Web Development</h3>
+        <p class="text-gray-600 dark:text-gray-300">
+          Custom websites built with HTML, CSS, JavaScript, and WordPress. 
+          Responsive designs that work perfectly on all devices.
+        </p>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li class="flex items-center">
+            <i class="fas fa-check text-primary dark:text-accent mr-2"></i>
+            Portfolio/Business Sites
+          </li>
+          <li class="flex items-center">
+            <i class="fas fa-check text-primary dark:text-accent mr-2"></i>
+            WordPress Customization
+          </li>
+          <li class="flex items-center">
+            <i class="fas fa-check text-primary dark:text-accent mr-2"></i>
+            UI/UX Focused
+          </li>
+        </ul>
+      </div>
+
+      <!-- Service 2: IT Consulting -->
+      <div class="service-card bg-white dark:bg-gray-700 p-8 rounded-xl shadow-md hover:shadow-lg transition">
+        <div class="w-14 h-14 bg-primary/10 dark:bg-accent/10 rounded-full flex items-center justify-center mb-6">
+          <i class="fas fa-server text-2xl text-primary dark:text-accent"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3 text-primary dark:text-white">IT Consulting</h3>
+        <p class="text-gray-600 dark:text-gray-300">
+          Technical guidance for businesses, from software solutions to 
+          infrastructure recommendations and digital strategy.
+        </p>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li class="flex items-center">
+            <i class="fas fa-check text-primary dark:text-accent mr-2"></i>
+            System Analysis
+          </li>
+          <li class="flex items-center">
+            <i class="fas fa-check text-primary dark:text-accent mr-2"></i>
+            Tech Stack Advice
+          </li>
+          <li class="flex items-center">
+            <i class="fas fa-check text-primary dark:text-accent mr-2"></i>
+            Troubleshooting
+          </li>
+        </ul>
+      </div>
+
+      <!-- Service 3: Content Creation -->
+      <div class="service-card bg-white dark:bg-gray-700 p-8 rounded-xl shadow-md hover:shadow-lg transition">
+        <div class="w-14 h-14 bg-primary/10 dark:bg-accent/10 rounded-full flex items-center justify-center mb-6">
+          <i class="fas fa-pen-fancy text-2xl text-primary dark:text-accent"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3 text-primary dark:text-white">Content Creation</h3>
+        <p class="text-gray-600 dark:text-gray-300">
+          Technical writing and content strategy for blogs, social media, 
+          and websites with SEO optimization.
+        </p>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li class="flex items-center">
+            <i class="fas fa-check text-primary dark:text-accent mr-2"></i>
+            Blog Posts
+          </li>
+          <li class="flex items-center">
+            <i class="fas fa-check text-primary dark:text-accent mr-2"></i>
+            LinkedIn Content
+          </li>
+          <li class="flex items-center">
+            <i class="fas fa-check text-primary dark:text-accent mr-2"></i>
+            SEO Optimization
+          </li>
+        </ul>
+      </div>
+    </div>
+</section>
   <!-- Skills Section -->
   <section id="skills" class="py-20 bg-white dark:bg-gray-900">
     <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-bold text-primary dark:text-white text-center mb-10">My Skills</h2>
+      <h2 class="text-3xl font-bold text-primary dark:text-white text-center mb-10">Best skills on</h2>
 
       <!-- Skills Icons Grid -->
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 justify-items-center mb-12">
@@ -221,24 +308,6 @@
           <p class="font-medium text-gray-700 dark:text-gray-300">Git & GitHub</p>
         </div>
       </div>
-
-      <!-- Other Skills List -->
-      <div class="grid md:grid-cols-2 gap-8 text-gray-700 dark:text-gray-300">
-        <ul class="list-disc list-inside space-y-2">
-          <li>Responsive Design with Tailwind CSS</li>
-          <li>Content Management & Strategy</li>
-          <li>Google Sheets & Google Apps Script</li>
-          <li>SEO Writing & Blog Optimization</li>
-        </ul>
-        <ul class="list-disc list-inside space-y-2">
-          <li>Firebase Database & Hosting</li>
-          <li>Basic IT Support & Troubleshooting</li>
-          <li>Networking Basics</li>
-          <li>Client Communication & Project Planning</li>
-        </ul>
-      </div>
-    </div>
-  </section>
 
  <!-- Work Section -->
 <section id="work" class="py-20 bg-secondary dark:bg-dark">
@@ -347,63 +416,130 @@
   </div>
 </section>
 
-  <!-- Career Section -->
-  <section id="career" class="py-20 bg-white dark:bg-gray-800">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-bold mb-10 text-primary dark:text-white text-center">My Career Journey</h2>
-
-      <div class="max-w-3xl mx-auto relative border-l-4 border-primary dark:border-accent pl-6 space-y-10">
-        <!-- School -->
-        <div class="relative pl-6">
-          <span class="absolute left-[-15px] top-1 w-6 h-6 bg-primary rounded-full"></span>
-          <h3 class="text-lg font-bold text-primary dark:text-accent">Kathiani Girls High School</h3>
-          <p class="text-sm text-gray-600 dark:text-gray-300">Graduated with a C+ (2019)</p>
+ <!-- Career Journey Section -->
+<section id="career" class="py-20 bg-white dark:bg-gray-800">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-16 text-primary dark:text-white">My Career Journey</h2>
+    
+    <!-- 3-Column Layout -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      
+      <!-- ===== EDUCATION COLUMN ===== -->
+      <div class="bg-secondary/50 dark:bg-gray-700/50 p-6 rounded-xl shadow-md">
+        <div class="flex items-center mb-6">
+          <div class="bg-primary/10 dark:bg-accent/10 p-3 rounded-full mr-4">
+            <i class="fas fa-graduation-cap text-primary dark:text-accent"></i>
+          </div>
+          <h3 class="text-xl font-bold text-primary dark:text-white">Education</h3>
         </div>
-
-        <!-- University -->
-        <div class="relative pl-6">
-          <span class="absolute left-[-15px] top-1 w-6 h-6 bg-primary rounded-full"></span>
-          <h3 class="text-lg font-bold text-primary dark:text-accent">BSc. Information Science (IT) – Rongo University</h3>
-          <p class="text-sm text-gray-600 dark:text-gray-300">2020 - Present • Created systems like a Library Management App and Student Feedback Portal</p>
+        
+        <div class="space-y-6">
+          <!-- School -->
+          <div class="pl-4 border-l-2 border-primary/30 dark:border-accent/30">
+            <h4 class="font-semibold">Kathiani Girls High School</h4>
+            <p class="text-sm text-gray-600 dark:text-gray-300">2009 - 2019</p>
+            <p class="mt-1 text-sm">KCSE: C+</p>
+          </div>
+          
+          <!-- University -->
+          <div class="pl-4 border-l-2 border-primary/30 dark:border-accent/30">
+            <h4 class="font-semibold">BSc. Information Science (IT)</h4>
+            <p class="text-sm text-gray-600 dark:text-gray-300">Rongo University • 2020 - Present</p>
+            <ul class="mt-2 pl-4 space-y-1 text-sm list-disc">
+              <li>Library Management System (PHP/MySQL)</li>
+              <li>Student Feedback Portal</li>
+            </ul>
+          </div>
         </div>
-
-        <!-- Long Jump Africa -->
-        <div class="relative pl-6">
-          <span class="absolute left-[-15px] top-1 w-6 h-6 bg-primary rounded-full"></span>
-          <h3 class="text-lg font-bold text-primary dark:text-accent">IT Intern – Long Jump Africa</h3>
-          <p class="text-sm text-gray-600 dark:text-gray-300">Performed SEO audits, content writing, and managed solar blog CMS</p>
+      </div>
+      
+      <!-- ===== EXPERIENCE COLUMN ===== -->
+      <div class="bg-secondary/50 dark:bg-gray-700/50 p-6 rounded-xl shadow-md">
+        <div class="flex items-center mb-6">
+          <div class="bg-primary/10 dark:bg-accent/10 p-3 rounded-full mr-4">
+            <i class="fas fa-briefcase text-primary dark:text-accent"></i>
+          </div>
+          <h3 class="text-xl font-bold text-primary dark:text-white">Experience</h3>
         </div>
-
-        <!-- Buildena Africa -->
-        <div class="relative pl-6">
-          <span class="absolute left-[-15px] top-1 w-6 h-6 bg-primary rounded-full"></span>
-          <h3 class="text-lg font-bold text-primary dark:text-accent">Content Creator – Buildena Africa</h3>
-          <p class="text-sm text-gray-600 dark:text-gray-300">Created LinkedIn content, carousels, and blog strategy for sustainability and energy</p>
+        
+        <div class="space-y-6">
+          <!-- Internship -->
+          <div class="pl-4 border-l-2 border-primary/30 dark:border-accent/30">
+            <h4 class="font-semibold">IT Intern</h4>
+            <p class="text-sm text-gray-600 dark:text-gray-300">Long Jump Africa • 2022</p>
+            <ul class="mt-2 pl-4 space-y-1 text-sm list-disc">
+              <li>SEO audits for solar energy blog</li>
+              <li>WordPress content management</li>
+            </ul>
+          </div>
+          
+          <!-- Content Role -->
+          <div class="pl-4 border-l-2 border-primary/30 dark:border-accent/30">
+            <h4 class="font-semibold">Content Creator</h4>
+            <p class="text-sm text-gray-600 dark:text-gray-300">Buildena Africa • 2023</p>
+            <ul class="mt-2 pl-4 space-y-1 text-sm list-disc">
+              <li>LinkedIn carousels on sustainability</li>
+              <li>Technical blog strategy</li>
+            </ul>
+          </div>
+          
+          <!-- Freelance -->
+          <div class="pl-4 border-l-2 border-primary/30 dark:border-accent/30">
+            <h4 class="font-semibold">Freelance Developer</h4>
+            <p class="text-sm text-gray-600 dark:text-gray-300">2023 - Present</p>
+            <ul class="mt-2 pl-4 space-y-1 text-sm list-disc">
+              <li>Portfolio websites for clients</li>
+              <li>WordPress customization</li>
+              <li>IT consulting</li>
+            </ul>
+          </div>
         </div>
-
-        <!-- Rayshine Tech -->
-        <div class="relative pl-6">
-          <span class="absolute left-[-15px] top-1 w-6 h-6 bg-primary rounded-full"></span>
-          <h3 class="text-lg font-bold text-primary dark:text-accent">Web Assistant – Rayshine Tech</h3>
-          <p class="text-sm text-gray-600 dark:text-gray-300">Worked on WordPress dashboards and integrated forms</p>
+      </div>
+      
+      <!-- ===== SKILLS COLUMN ===== -->
+      <div class="bg-secondary/50 dark:bg-gray-700/50 p-6 rounded-xl shadow-md">
+        <div class="flex items-center mb-6">
+          <div class="bg-primary/10 dark:bg-accent/10 p-3 rounded-full mr-4">
+            <i class="fas fa-code text-primary dark:text-accent"></i>
+          </div>
+          <h3 class="text-xl font-bold text-primary dark:text-white">Professional Skills</h3>
         </div>
-
-        <!-- Freelance Developer -->
-        <div class="relative pl-6">
-          <span class="absolute left-[-15px] top-1 w-6 h-6 bg-primary rounded-full"></span>
-          <h3 class="text-lg font-bold text-primary dark:text-accent">Freelance Web Developer</h3>
-          <p class="text-sm text-gray-600 dark:text-gray-300">Built business and portfolio websites for multiple clients including Naftali Kahwai & Grace Wakesho</p>
+        
+        <!-- Technical Skills -->
+        <div class="mb-6">
+          <h4 class="font-semibold mb-3 text-primary/80 dark:text-accent/80">Technical</h4>
+          <div class="flex flex-wrap gap-2">
+            <span class="skill-tag">HTML/CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">WordPress</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">MySQL</span>
+          </div>
         </div>
-
-        <!-- Current Status -->
-        <div class="relative pl-6">
-          <span class="absolute left-[-15px] top-1 w-6 h-6 bg-primary rounded-full"></span>
-          <h3 class="text-lg font-bold text-primary dark:text-accent">Currently</h3>
-          <p class="text-sm text-gray-600 dark:text-gray-300">Managing client websites, freelancing, and consulting in IT & web development</p>
+        
+        <!-- Content Skills -->
+        <div class="mb-6">
+          <h4 class="font-semibold mb-3 text-primary/80 dark:text-accent/80">Content</h4>
+          <div class="flex flex-wrap gap-2">
+            <span class="skill-tag">SEO Writing</span>
+            <span class="skill-tag">Blog Strategy</span>
+            <span class="skill-tag">Technical Documentation</span>
+          </div>
+        </div>
+        
+        <!-- Soft Skills -->
+        <div>
+          <h4 class="font-semibold mb-3 text-primary/80 dark:text-accent/80">Professional</h4>
+          <div class="flex flex-wrap gap-2">
+            <span class="skill-tag">Project Management</span>
+            <span class="skill-tag">Client Communication</span>
+            <span class="skill-tag">Problem Solving</span>
+          </div>
         </div>
       </div>
     </div>
-  </section>
+</section>
 
   <!-- Testimonials Section -->
   <section id="testimonials" class="py-20 bg-white dark:bg-gray-800">
@@ -436,9 +572,9 @@
           <div class="snap-center min-w-[85vw] md:min-w-[50vw] lg:min-w-[30vw]">
             <div class="bg-secondary dark:bg-gray-700 rounded-xl shadow-lg p-8 h-full flex flex-col">
               <div class="flex items-center mb-6">
-                <img src="assets/testimonials/naftali.webp" alt="Naftali Kahwai" class="w-16 h-16 rounded-full object-cover border-2 border-primary dark:border-accent mr-4" loading="lazy">
+                <img src="assets/testimonials/aithel.webp" alt="Aithel Otiende" class="w-16 h-16 rounded-full object-cover border-2 border-primary dark:border-accent mr-4" loading="lazy">
                 <div>
-                  <h4 class="font-bold">Naftali Kahwai</h4>
+                  <h4 class="font-bold">Aithel Otiende</h4>
                   <p class="text-sm text-gray-600 dark:text-gray-300">Graphic Designer</p>
                 </div>
               </div>
@@ -542,28 +678,7 @@
         </div>
       </div>
     </div>
-  </section>
-<!-- Privacy Policy Section -->
-<section id="privacy" class="py-12 bg-white dark:bg-gray-800">
-  <div class="container mx-auto px-6 max-w-4xl">
-    <h2 class="text-2xl font-bold mb-6 text-primary dark:text-white">Privacy Policy</h2>
-    
-    <div class="prose dark:prose-invert">
-      <p class="mb-4"><strong>Last Updated:</strong> July 2024</p>
-      
-      <h3 class="text-lg font-semibold mt-4">Information Collection</h3>
-      <p class="mb-4">I collect information when you fill out my contact form, including your name, email address, and message content. This data is used solely to respond to your inquiry.</p>
-      
-      <h3 class="text-lg font-semibold mt-4">Data Protection</h3>
-      <p class="mb-4">Your personal information is protected through Formspree's secure submission system. I don't share your data with third parties except as necessary to respond to your request.</p>
-      
-      <h3 class="text-lg font-semibold mt-4">Cookies</h3>
-      <p class="mb-4">This website uses essential cookies for functionality and dark mode preferences. No tracking cookies are used.</p>
-      
-      <h3 class="text-lg font-semibold mt-4">Your Rights</h3>
-      <p class="mb-4">You may request access to or deletion of your personal data by emailing nancyndanuo6@gmail.com</p>
-    </div>
-  </div>
+
 </section>
   <!-- Footer -->
   <footer class="bg-[#0f172a] dark:bg-dark text-white py-8">
