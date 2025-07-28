@@ -143,7 +143,7 @@
           <a href="#home" class="nav-link hover:text-accent">Home</a>
           <a href="#skills" class="nav-link hover:text-accent">Features</a>
           <a href="#projects" class="nav-link hover:text-accent">Projects</a>
-          <a href="#work" class="nav-link hover:text-accent">Resume</a>
+          <a href="#resume" class="nav-link hover:text-accent">Resume</a>
           <a href="#testimonials" class="nav-link hover:text-accent">Testimonials</a>
           <a href="#contact" class="nav-link hover:text-accent">Contact</a>
         </nav>
@@ -170,7 +170,6 @@
 
   <!-- Hero Section -->
   <section id="home" class="min-h-screen bg-[#0f172a] text-[#f0f7ff] flex flex-col md:flex-row items-center justify-between px-6 md:px-20 pt-32 pb-20">
-    <div class="h-0.5 w-full my-12 bg-gradient-to-r from-transparent via-[#1e3a8a] to-transparent dark:via-[#3b82f6]"></div>
     <div class="w-full md:w-1/2 text-center md:text-left space-y-6">
       <p class="text-sm uppercase tracking-widest text-[#94a3b8]">Welcome to my portfolio</p>
       <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">Hi, I'm <span class="text-accent">Nancy Ndanu</span></h1>
@@ -190,14 +189,14 @@
   </a>
 </div>
 
-  <!-- Profile Image - Left-Aligned Version -->
-<div class="relative md:absolute md:left-0 md:top-1/2 md:-translate-y-1/2 mt-10 md:mt-0">
-  <img src="assets/nancy-profile-photo.jpg" alt="Nancy Ndanu" 
-       class="w-[250px] h-[330px] md:w-[300px] md:h-[400px] object-cover border-4 border-[#1e3a8a] shadow-lg rounded-xl">
-</div>
-  </section>
-<!-- What I Do Section -->
+  <!-- Profile Image - Right Aligned & Larger -->
+  <div class="relative mt-10 md:mt-0 md:ml-auto">
+    <img src="assets/nancy-profile-photo.jpg" alt="Nancy Ndanu" 
+         class="w-[320px] h-[420px] md:w-[350px] md:h-[470px] object-cover border-4 border-[#1e3a8a] shadow-2xl rounded-xl hover:scale-105 transition-transform duration-300">
+  </div>
+ <!-- What I Do Section -->
 <section id="features" class="py-20 bg-dark:bg-[#0f172a]">
+   <div class="h-0.5 w-full my-12 bg-gradient-to-r from-transparent via-[#1e3a8a] to-transparent dark:via-[#3b82f6]"></div>
   <div class="container mx-auto px-6">
     <div class="text-center mb-16">
       <h2 class="text-3xl font-bold mb-4 text-primary dark:text-white">What I Do</h2>
@@ -283,11 +282,12 @@
         </ul>
       </div>
     </div>
-</section>
-  <!-- Skills Section -->
-  <section id="skills" class="py-20 bg-white dark:bg-gray-900">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-bold text-primary dark:text-white text-center mb-10">Best skills on</h2>
+
+    <!-- Skills Section -->
+    <div class="mt-20">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-bold text-primary dark:text-white">Best skills on</h2>
+      </div>
 
       <!-- Skills Icons Grid -->
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 justify-items-center mb-12">
@@ -316,7 +316,9 @@
           <p class="font-medium text-gray-700 dark:text-gray-300">Git & GitHub</p>
         </div>
       </div>
-
+    </div>
+  </div>
+</section>
  <!-- Work Section -->
 <section id="projects" class="py-20 dark:bg-[#0f172a]>
   <div class="h-0.5 w-full my-12 bg-gradient-to-r from-transparent via-[#1e3a8a] to-transparent dark:via-[#3b82f6]"></div>
@@ -325,14 +327,7 @@
       <h2 class="text-3xl font-bold mb-4 text-primary dark:text-white">My Projects</h2>
       <p class="max-w-2xl mx-auto text-gray-600 dark:text-gray-300">Selected projects I've worked on recently</p>
     </div>
-    
-    <!-- Project Filter -->
-    <div class="flex flex-wrap justify-center gap-4 mb-12">
-      <button class="filter-btn active bg-primary text-white px-6 py-2 rounded-full" data-filter="all">All</button>
-      <button class="filter-btn border border-primary text-primary dark:border-white dark:text-white px-6 py-2 rounded-full hover:bg-primary hover:text-white dark:hover:bg-white dark:hover:text-dark transition" data-filter="web">Web</button>
-      <button class="filter-btn border border-primary text-primary dark:border-white dark:text-white px-6 py-2 rounded-full hover:bg-primary hover:text-white dark:hover:bg-white dark:hover:text-dark transition" data-filter="writing">Content</button>
-    </div>
-    
+  
     <!-- Projects Grid - Updated with all projects -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       
@@ -704,7 +699,7 @@
 
 </section>
   <!-- Footer -->
-  <footer class="bg-[#0f172a] dark:bg-dark text-white py-8">
+  <footer class="bg-[#0f172a] dark:bg-[#0f172a] text-white py-8">
     <div class="container mx-auto px-6 text-center">
       <div class="flex justify-center space-x-6 mb-6">
         <a href="#" class="hover:text-[#3b82f6] transition">Home</a>
