@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <head>
   <title>Nancy Ndanu |Information Scientist| Web Developer & IT Consultant</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +8,11 @@
   <meta name="author" content="Nancy Ndanu">
   <meta property="og:title" content="Nancy Ndanu – Web Developer Portfolio">
   <meta property="og:description" content="Freelance developer & IT consultant helping businesses grow with smart websites.">
-  <meta property="og:image" content="https://nancyndanu.github.io/assetsnancy-hero.jpg.jpg.">
+  <meta property="og:image" content="https://nancyndanu.github.io/assets/nancy-hero.jpg">
   <meta property="og:url" content="https://nancyndanu.github.io">
   <meta name="twitter:card" content="summary_large_image">
-</head>
-   <!-- Preload Resources -->
+  
+  <!-- Preload Resources -->
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" as="style">
   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
   
@@ -29,14 +28,12 @@
       theme: {
         extend: {
           colors: {
-          colors: {
-                  primary: '#1e3a8a',         // For buttons, links, highlights
-                  secondary: '#f0f7ff',       // For text backgrounds or cards
-                  accent: '#3b82f6',          // For hover, call to actions
-                  dark: '#172554',            // For heading text or overlays
-                  background: '#0f172a',      // NEW: page background
-}
-
+            primary: '#1e3a8a',
+            secondary: '#f0f7ff',
+            accent: '#3b82f6',
+            dark: '#172554',
+            background: '#0f172a'
+          },
           animation: {
             'float': 'float 6s ease-in-out infinite',
             'fadeIn': 'fadeIn 1s ease-out'
@@ -94,12 +91,6 @@
       overflow: hidden;
       line-height: 0;
     }
-    .wave-divider svg {
-      position: relative;
-      display: block;
-      width: calc(100% + 1.3px);
-      height: 100px;
-    }
     
     .project-card {
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -139,23 +130,23 @@
   <div class="fixed top-0 left-0 h-1 z-50 bg-accent" id="scroll-progress"></div>
 
   <!-- Navigation -->
- <header class="fixed top-0 w-full z-50 bg-[#0f172a] shadow-md border-b-2 border-[#172554]">
+  <header class="fixed top-0 w-full z-50 bg-[#0f172a] shadow-md border-b-2 border-[#172554]">
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
       <a href="#" class="flex items-center space-x-6">
-        <img src="assets/logo-dark.png.png" alt="Nancy Ndanu Logo" class="h-10 w-auto" />
-       <span class="text-xl font-bold">Nancy Ndanu</span>
+        <img src="assets/logo-dark.png" alt="Nancy Ndanu Logo" class="h-10 w-auto" />
+        <span class="text-xl font-bold">Nancy Ndanu</span>
       </a>
       
       <!-- Desktop Nav -->
-<div class="hidden md:flex items-end space-x-6">
-  <!-- Nav Links -->
-  <nav class="flex space-x-4">
-    <a href="#home" class="nav-link hover:text-accent">Home</a>
-    <a href="#skills" class="nav-link hover:text-accent">Skills</a>
-    <a href="#work" class="nav-link hover:text-accent">Work</a>
-    <a href="#testimonials" class="nav-link hover:text-accent">Testimonials</a>
-    <a href="#contact" class="nav-link hover:text-accent">Contact</a>
-  </nav>
+      <div class="hidden md:flex items-end space-x-6">
+        <nav class="flex space-x-4">
+          <a href="#home" class="nav-link hover:text-accent">Home</a>
+          <a href="#skills" class="nav-link hover:text-accent">Skills</a>
+          <a href="#work" class="nav-link hover:text-accent">Work</a>
+          <a href="#testimonials" class="nav-link hover:text-accent">Testimonials</a>
+          <a href="#contact" class="nav-link hover:text-accent">Contact</a>
+        </nav>
+      </div>
 
       <!-- Mobile Menu Button -->
       <button id="mobile-menu-button" class="md:hidden text-primary dark:text-white">
@@ -163,325 +154,278 @@
       </button>
     </div>
     
-<section id="home" class="min-h-screen bg-[#0f172a] text-[#f0f7ff] flex flex-col md:flex-row items-center justify-between px-6 md:px-20 pt-32 pb-20">
-  <div class="w-full md:w-1/2 text-center md:text-left space-y-6">
-    <p class="text-sm uppercase tracking-widest text-[#94a3b8]">Welcome to my portfolio</p>
-    <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">Hi, I'm <span class="text-accent">Nancy Ndanu</span></h1>
-    <p class="text-2xl md:text-3xl font-medium">Information Scientist | Web Developer | IT Consultant</p>
-    <p class="text-md md:text-lg text-[#e2e8f0] max-w-xl leading-relaxed">
-      I build secure, scalable, and user-friendly websites with WordPress, Tailwind, JS & PHP. From designing and developing websites to managing content systems and developing custom business solutions and technical skills to every project. Let’s turn your vision into reality.
-    </p>
-    <a href="#work" class="inline-block px-6 py-3 bg-[#3b82f6] text-white rounded-2xl shadow-md hover:bg-[#1e3a8a] transition">View My Work</a>
-  </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#0f172a] w-full absolute left-0 px-6 py-4">
+      <nav class="flex flex-col space-y-4">
+        <a href="#home" class="nav-link hover:text-accent">Home</a>
+        <a href="#skills" class="nav-link hover:text-accent">Skills</a>
+        <a href="#work" class="nav-link hover:text-accent">Work</a>
+        <a href="#testimonials" class="nav-link hover:text-accent">Testimonials</a>
+        <a href="#contact" class="nav-link hover:text-accent">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-      <a
-        href="./assets/Nancy_Ndanu_Resume.pdf"
-        download
-        class="bg-[#f0f7ff] text-[#1e3a8a] border-2 border-[#1e3a8a] px-6 py-2 rounded-full font-bold hover:bg-[#1e3a8a] hover:text-white transition mt-4 inline-block"
-      >
-        Download CV
-      </a>
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen bg-[#0f172a] text-[#f0f7ff] flex flex-col md:flex-row items-center justify-between px-6 md:px-20 pt-32 pb-20">
+    <div class="w-full md:w-1/2 text-center md:text-left space-y-6">
+      <p class="text-sm uppercase tracking-widest text-[#94a3b8]">Welcome to my portfolio</p>
+      <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">Hi, I'm <span class="text-accent">Nancy Ndanu</span></h1>
+      <p class="text-2xl md:text-3xl font-medium">Information Scientist | Web Developer | IT Consultant</p>
+      <p class="text-md md:text-lg text-[#e2e8f0] max-w-xl leading-relaxed">
+        I build secure, scalable, and user-friendly websites with WordPress, Tailwind, JS & PHP. From designing and developing websites to managing content systems and developing custom business solutions and technical skills to every project. Let's turn your vision into reality.
+      </p>
+      <div class="flex space-x-4">
+        <a href="#work" class="inline-block px-6 py-3 bg-[#3b82f6] text-white rounded-2xl shadow-md hover:bg-[#1e3a8a] transition">View My Work</a>
+        <a href="./assets/Nancy_Ndanu_Resume.pdf" download class="bg-[#f0f7ff] text-[#1e3a8a] border-2 border-[#1e3a8a] px-6 py-3 rounded-full font-bold hover:bg-[#1e3a8a] hover:text-white transition inline-block">
+          Download CV
+        </a>
+      </div>
     </div>
 
     <!-- Profile Image -->
-    <div class="relative">
-     <img src="assets/nancy-profile-photo.jpg.jpeg" alt="Nancy Ndanu" class="w-[300px] h-[400px] object-cover border-4 border-[#1e3a8a] shadow-lg rounded-xl">
+    <div class="relative mt-10 md:mt-0">
+      <img src="assets/nancy-profile-photo.jpg" alt="Nancy Ndanu" class="w-[300px] h-[400px] object-cover border-4 border-[#1e3a8a] shadow-lg rounded-xl">
     </div>
-  </div>
-</section>
+  </section>
 
- <!-- Skills Section -->
-<section id="skills" class="py-20 bg-white dark:bg-gray-900">
-  <div class="container mx-auto px-6">
-    <h2 class="text-3xl font-bold text-primary dark:text-white text-center mb-10">My Skills</h2>
-
-    <!-- Skills Icons Grid -->
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 justify-items-center mb-12">
-      <div class="flex flex-col items-center">
-        <img src="assets/html.png.png" alt="HTML" class="w-8 h-8 mb-2">
-        <p class="font-medium text-gray-700 dark:text-gray-300">HTML</p>
-      </div>
-      <div class="flex flex-col items-center">
-        <img src="assets/javascript.png.png" alt="JavaScript" class="w-8 h-8 mb-2">
-        <p class="font-medium text-gray-700 dark:text-gray-300">JavaScript</p>
-      </div>
-      <div class="flex flex-col items-center">
-        <img src="assets/wordpress.png.png" alt="WordPress" class="w-8 h-8 mb-2">
-        <p class="font-medium text-gray-700 dark:text-gray-300">WordPress</p>
-      </div>
-      <div class="flex flex-col items-center">
-        <img src="assets/php.png.png" alt="PHP" class="w-8 h-8 mb-2">
-        <p class="font-medium text-gray-700 dark:text-gray-300">PHP</p>
-      </div>
-      <div class="flex flex-col items-center">
-        <img src="assets/mysql.png.png" alt="MySQL" class="w-8 h-8 mb-2">
-        <p class="font-medium text-gray-700 dark:text-gray-300">MySQL</p>
-      </div>
-      <div class="flex flex-col items-center">
-        <img src="assets/github.png.png" alt="GitHub" class="w-8 h-8 mb-2">
-        <p class="font-medium text-gray-700 dark:text-gray-300">Git & GitHub</p>
-      </div>
-    </div>
-
-    <!-- Other Skills List -->
-    <div class="grid md:grid-cols-2 gap-8 text-gray-700 dark:text-gray-300">
-      <ul class="list-disc list-inside space-y-2">
-        <li>Responsive Design with Tailwind CSS</li>
-        <li>Content Management & Strategy</li>
-        <li>Google Sheets & Google Apps Script</li>
-        <li>SEO Writing & Blog Optimization</li>
-      </ul>
-      <ul class="list-disc list-inside space-y-2">
-        <li>Firebase Database & Hosting</li>
-        <li>Basic IT Support & Troubleshooting</li>
-        <li>Networking Basics</li>
-        <li>Client Communication & Project Planning</li>
-      </ul>
-    </div>
-  </div>
-</section>
- <section id="skills" class="py-20 bg-white dark:bg-gray-800 relative">
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-white dark:bg-gray-900">
     <div class="container mx-auto px-6">
-      <div class="text-center mb-16" data-aos="fade-up">
-        <h2 class="text-3xl font-bold mb-4 text-primary dark:text-white">My Projects</h2>
-        <div class="w-20 h-1 bg-primary mx-auto"></div>
+      <h2 class="text-3xl font-bold text-primary dark:text-white text-center mb-10">My Skills</h2>
+
+      <!-- Skills Icons Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 justify-items-center mb-12">
+        <div class="flex flex-col items-center">
+          <img src="assets/html.png" alt="HTML" class="w-8 h-8 mb-2">
+          <p class="font-medium text-gray-700 dark:text-gray-300">HTML</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="assets/javascript.png" alt="JavaScript" class="w-8 h-8 mb-2">
+          <p class="font-medium text-gray-700 dark:text-gray-300">JavaScript</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="assets/wordpress.png" alt="WordPress" class="w-8 h-8 mb-2">
+          <p class="font-medium text-gray-700 dark:text-gray-300">WordPress</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="assets/php.png" alt="PHP" class="w-8 h-8 mb-2">
+          <p class="font-medium text-gray-700 dark:text-gray-300">PHP</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="assets/mysql.png" alt="MySQL" class="w-8 h-8 mb-2">
+          <p class="font-medium text-gray-700 dark:text-gray-300">MySQL</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="assets/github.png" alt="GitHub" class="w-8 h-8 mb-2">
+          <p class="font-medium text-gray-700 dark:text-gray-300">Git & GitHub</p>
+        </div>
       </div>
+
+      <!-- Other Skills List -->
+      <div class="grid md:grid-cols-2 gap-8 text-gray-700 dark:text-gray-300">
+        <ul class="list-disc list-inside space-y-2">
+          <li>Responsive Design with Tailwind CSS</li>
+          <li>Content Management & Strategy</li>
+          <li>Google Sheets & Google Apps Script</li>
+          <li>SEO Writing & Blog Optimization</li>
+        </ul>
+        <ul class="list-disc list-inside space-y-2">
+          <li>Firebase Database & Hosting</li>
+          <li>Basic IT Support & Troubleshooting</li>
+          <li>Networking Basics</li>
+          <li>Client Communication & Project Planning</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Section -->
+  <section id="work" class="py-20 bg-secondary dark:bg-dark">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold mb-4 text-primary dark:text-white">My Work</h2>
+        <p class="max-w-2xl mx-auto text-gray-600 dark:text-gray-300">Selected projects I've worked on recently</p>
+      </div>
+      
+      <!-- Project Filter -->
+      <div class="flex flex-wrap justify-center gap-4 mb-12">
+        <button class="filter-btn active bg-primary text-white px-6 py-2 rounded-full" data-filter="all">All</button>
+        <button class="filter-btn border border-primary text-primary dark:border-white dark:text-white px-6 py-2 rounded-full hover:bg-primary hover:text-white dark:hover:bg-white dark:hover:text-dark transition" data-filter="web">Web</button>
+        <button class="filter-btn border border-primary text-primary dark:border-white dark:text-white px-6 py-2 rounded-full hover:bg-primary hover:text-white dark:hover:bg-white dark:hover:text-dark transition" data-filter="mobile">Mobile</button>
+      </div>
+      
+      <!-- Projects Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <div class="project-card bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md transition hover:shadow-lg" data-category="web">
+          <div class="relative overflow-hidden h-60">
+            <img src="assets/projects/nancy-portfolio.jpg" alt="Nancy Portfolio" class="w-full h-full object-cover transition duration-500 hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+              <div>
+                <h3 class="text-white text-xl font-bold">Nancy's Portfolio</h3>
+                <span class="tech-tag bg-white/10 text-white px-3 py-1 rounded-full text-xs">Tailwind · HTML · GitHub</span>
               </div>
             </div>
+          </div>
+          <div class="p-6">
+            <p class="mb-4 text-gray-700 dark:text-gray-300">
+              A fully responsive portfolio website showcasing my work, skills, and services as an Information Scientist and Web Developer. Includes dark mode, animations, and a working contact form.
+            </p>
+            <div class="flex items-center space-x-4">
+              <a href="https://nancyndanu.github.io/nancy-nduati-portfolio/" target="_blank" class="text-primary dark:text-accent font-semibold hover:underline">Live Site</a>
+              <a href="https://github.com/nancyndanu/nancy-nduati-portfolio" target="_blank" class="text-sm text-gray-500 dark:text-gray-300 underline hover:text-primary">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card bg-white dark:bg-dark rounded-2xl shadow-md overflow-hidden transition-transform hover:scale-105" data-category="web">
+          <a href="https://nancyndanu.github.io/grace-wakesho-portfolio/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/projects/grace-wakesho.jpg" alt="Grace Wakesho Portfolio" class="w-full h-60 object-cover">
+          </a>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-primary dark:text-white">Grace Wakesho Portfolio</h3>
+            <p class="text-sm text-gray-700 dark:text-gray-300 mt-2">
+              Designed and developed a personalized portfolio site for Grace Wakesho — a professional showcasing her background, skills, and projects in a clean, user-friendly layout.
+            </p>
+            <a href="https://nancyndanu.github.io/grace-wakesho-portfolio/" 
+              target="_blank" 
+              class="inline-block mt-4 text-accent font-semibold hover:underline">
+              View Live →
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card bg-white dark:bg-gray-700 rounded-xl overflow-hidden shadow-md" data-category="writing">
+          <div class="relative overflow-hidden h-60">
+            <img src="assets/projects/raynow-chemitek.jpg" alt="RayNow Chemitek Blog" class="w-full h-full object-cover transition duration-500 hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+              <div>
+                <h3 class="text-white text-xl font-bold">RayNow Chemitek Blog</h3>
+                <span class="tech-tag bg-white/10 text-white px-3 py-1 rounded-full text-xs">Blog · Renewable Energy</span>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <p class="mb-4 text-gray-700 dark:text-gray-300">An informative blog post I created for RayNow Energy, highlighting Chemitek's innovative solar panel cleaning solutions.</p>
+            <a href="https://raynowenergy.com/chemitek/" target="_blank" class="text-primary dark:text-accent font-semibold hover:underline">View Live</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Portfolio Section -->
-<!-- Project: Nancy's Portfolio -->
-<div class="project-card bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md transition hover:shadow-lg" data-category="web">
-  <div class="relative overflow-hidden h-60">
-    <img src="assets/projects/nancy-portfolio.jpg" alt="Nancy Portfolio" class="w-full h-full object-cover transition duration-500 hover:scale-110">
-    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
-      <div>
-        <h3 class="text-white text-xl font-bold">Nancy's Portfolio</h3>
-        <span class="tech-tag bg-white/10 text-white px-3 py-1 rounded-full text-xs">Tailwind · HTML · GitHub</span>
-      </div>
-    </div>
-  </div>
-  <div class="p-6">
-    <p class="mb-4 text-gray-700 dark:text-gray-300">
-      A fully responsive portfolio website showcasing my work, skills, and services as an Information Scientist and Web Developer. Includes dark mode, animations, and a working contact form.
-    </p>
-    <div class="flex items-center space-x-4">
-      <a href="https://nancyndanu.github.io/nancy-nduati-portfolio/" target="_blank" class="text-primary dark:text-accent font-semibold hover:underline">Live Site</a>
-      <a href="https://github.com/nancyndanu/nancy-nduati-portfolio" target="_blank" class="text-sm text-gray-500 dark:text-gray-300 underline hover:text-primary">GitHub</a>
-    </div>
-  </div>
-</div>
-
-<!-- Project: Grace Wakesho Portfolio -->
-<div class="project-card bg-white dark:bg-dark rounded-2xl shadow-md overflow-hidden transition-transform hover:scale-105" data-category="web">
-  <a href="https://nancyndanu.github.io/grace-wakesho-portfolio/" target="_blank" rel="noopener noreferrer">
-    <img src="assets/projects/grace-wakesho.jpg" alt="Grace Wakesho Portfolio" class="w-full h-60 object-cover">
-  </a>
-  <div class="p-6">
-    <h3 class="text-xl font-bold text-primary dark:text-white">Grace Wakesho Portfolio</h3>
-    <p class="text-sm text-gray-700 dark:text-gray-300 mt-2">
-      Designed and developed a personalized portfolio site for Grace Wakesho — a professional showcasing her background, skills, and projects in a clean, user-friendly layout.
-    </p>
-    <a href="https://nancyndanu.github.io/grace-wakesho-portfolio/" 
-       target="_blank" 
-       class="inline-block mt-4 text-accent font-semibold hover:underline">
-      View Live →
-    </a>
-  </div>
-</div>
-
-
-<<!-- Project: RayNow Chemitek Blog -->
-<div class="project-card bg-white dark:bg-gray-700 rounded-xl overflow-hidden shadow-md" data-category="writing">
-  <div class="relative overflow-hidden h-60">
-    <img src="assets/projects/raynow-chemitek.jpg" alt="RayNow Chemitek Blog" class="w-full h-full object-cover transition duration-500 hover:scale-110">
-    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
-      <div>
-        <h3 class="text-white text-xl font-bold">RayNow Chemitek Blog</h3>
-        <span class="tech-tag bg-white/10 text-white px-3 py-1 rounded-full text-xs">Blog · Renewable Energy</span>
-      </div>
-    </div>
-  </div>
-  <div class="p-6">
-    <p class="mb-4 text-gray-700 dark:text-gray-300">An informative blog post I created for RayNow Energy, highlighting Chemitek's innovative solar panel cleaning solutions.</p>
-    <a href="https://raynowenergy.com/chemitek/" target="_blank" class="text-primary dark:text-accent font-semibold hover:underline">View Live</a>
-  </div>
-</div>
-
-
-<!-- Buildena Africa Project Card -->
-<div class="project-card bg-white rounded-2xl shadow-md overflow-hidden transition-transform hover:scale-105">
-  <a href="https://www.linkedin.com/pulse/how-geotechnical-investigations-drive-sustainable-resilient-qkmyc" target="_blank" rel="noopener noreferrer">
-    <img src="./assets/A_LinkedIn_post_image_created_for_Buildena_Africa,.png" alt="Buildena Africa LinkedIn Post" class="w-full h-60 object-cover">
-  </a>
-  <div class="p-4">
-    <h3 class="text-xl font-bold text-brown-800">Buildena Africa LinkedIn Post</h3>
-    <p class="text-sm text-gray-600 mt-2">
-      Created engaging LinkedIn content for Buildena Africa, highlighting the impact of geotechnical investigations on sustainable and resilient structural design.
-    </p>
-    <a href="https://www.linkedin.com/pulse/how-geotechnical-investigations-drive-sustainable-resilient-qkmyc" target="_blank" class="inline-block mt-4 text-light-brown font-semibold hover:underline">
-      View Live Post →
-    </a>
-  </div>
-</div>
-
-
-<!-- Project: Naftali Kahwai Portfolio -->
-<div class="project-card bg-white dark:bg-gray-700 rounded-xl overflow-hidden shadow-md" data-category="web">
-  <div class="relative overflow-hidden h-60">
-    <img src="assets/projects/naftali-kahwai.jpg" alt="Naftali Kahwai Portfolio" class="w-full h-full object-cover transition duration-500 hover:scale-110">
-    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
-      <div>
-        <h3 class="text-white text-xl font-bold">Naftali Kahwai Portfolio</h3>
-        <span class="tech-tag bg-white/10 text-white px-3 py-1 rounded-full text-xs">WordPress · UI/UX</span>
-      </div>
-    </div>
-  </div>
-  <div class="p-6">
-    <p class="mb-4 text-gray-700 dark:text-gray-300">Developed a custom personal site for a visual designer to showcase branding work.</p>
-    <a href="https://naftali-design.netlify.app/" target="_blank" class="text-primary dark:text-accent font-semibold hover:underline">View Live</a>
-  </div>
-</div>
- <section id="work" class="py-20 bg-secondary dark:bg-dark">
+  <!-- Career Section -->
+  <section id="career" class="py-20 bg-white dark:bg-gray-800">
     <div class="container mx-auto px-6">
-      <div class="text-center mb-16" data-aos="fade-up">
-        <h2 class="text-3xl font-bold mb-4 text-primary dark:text-white">My Work</h2>
-        <p class="max-w-2xl mx-auto text-gray-600 dark:text-gray-300">Selected projects I've worked on recently</p>
-      </div>
-      
-      <!-- Project Filter -->
-      <div class="flex flex-wrap justify-center gap-4 mb-12" data-aos="fade-up">
-        <button class="filter-btn active bg-primary text-white px-6 py-2 rounded-full" data-filter="all">All</button>
-        <button class="filter-btn border border-primary text-primary dark:border-white dark:text-white px-6 py-2 rounded-full hover:bg-primary hover:text-white dark:hover:bg-white dark:hover:text-dark transition" data-filter="web">Web</button>
-        <button class="filter-btn border border-primary text-primary dark:border-white dark:text-white px-6 py-2 rounded-full hover:bg-primary hover:text-white dark:hover:bg-white dark:hover:text-dark transition" data-filter="mobile">Mobile</button>
-      </div>
-        
-        <!-- Add more projects here -->
+      <h2 class="text-3xl font-bold mb-10 text-primary dark:text-white text-center">My Career Journey</h2>
+
+      <div class="max-w-3xl mx-auto relative border-l-4 border-primary dark:border-accent pl-6 space-y-10">
+        <!-- School -->
+        <div class="relative pl-6">
+          <span class="absolute left-[-15px] top-1 w-6 h-6 bg-primary rounded-full"></span>
+          <h3 class="text-lg font-bold text-primary dark:text-accent">Kathiani Girls High School</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300">Graduated with a C+ (2019)</p>
+        </div>
+
+        <!-- University -->
+        <div class="relative pl-6">
+          <span class="absolute left-[-15px] top-1 w-6 h-6 bg-primary rounded-full"></span>
+          <h3 class="text-lg font-bold text-primary dark:text-accent">BSc. Information Science (IT) – Rongo University</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300">2020 - Present • Created systems like a Library Management App and Student Feedback Portal</p>
+        </div>
+
+        <!-- Long Jump Africa -->
+        <div class="relative pl-6">
+          <span class="absolute left-[-15px] top-1 w-6 h-6 bg-primary rounded-full"></span>
+          <h3 class="text-lg font-bold text-primary dark:text-accent">IT Intern – Long Jump Africa</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300">Performed SEO audits, content writing, and managed solar blog CMS</p>
+        </div>
+
+        <!-- Buildena Africa -->
+        <div class="relative pl-6">
+          <span class="absolute left-[-15px] top-1 w-6 h-6 bg-primary rounded-full"></span>
+          <h3 class="text-lg font-bold text-primary dark:text-accent">Content Creator – Buildena Africa</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300">Created LinkedIn content, carousels, and blog strategy for sustainability and energy</p>
+        </div>
+
+        <!-- Rayshine Tech -->
+        <div class="relative pl-6">
+          <span class="absolute left-[-15px] top-1 w-6 h-6 bg-primary rounded-full"></span>
+          <h3 class="text-lg font-bold text-primary dark:text-accent">Web Assistant – Rayshine Tech</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300">Worked on WordPress dashboards and integrated forms</p>
+        </div>
+
+        <!-- Freelance Developer -->
+        <div class="relative pl-6">
+          <span class="absolute left-[-15px] top-1 w-6 h-6 bg-primary rounded-full"></span>
+          <h3 class="text-lg font-bold text-primary dark:text-accent">Freelance Web Developer</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300">Built business and portfolio websites for multiple clients including Naftali Kahwai & Grace Wakesho</p>
+        </div>
+
+        <!-- Current Status -->
+        <div class="relative pl-6">
+          <span class="absolute left-[-15px] top-1 w-6 h-6 bg-primary rounded-full"></span>
+          <h3 class="text-lg font-bold text-primary dark:text-accent">Currently</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300">Managing client websites, freelancing, and consulting in IT & web development</p>
+        </div>
       </div>
     </div>
   </section>
-<!-- Portfolio Section -->
-<section id="career" class="py-20 bg-white dark:bg-gray-800">
-  <div class="container mx-auto px-6">
-    <h2 class="text-3xl font-bold mb-10 text-primary dark:text-white text-center">My Career Journey</h2>
-
-    <div class="max-w-3xl mx-auto relative border-l-4 border-primary dark:border-accent pl-6 space-y-10">
-      
-      <!-- School -->
-      <div class="relative pl-6">
-        <span class="absolute left-[-15px] top-1 w-6 h-6 bg-primary rounded-full"></span>
-        <h3 class="text-lg font-bold text-primary dark:text-accent">Kathiani Girls High School</h3>
-        <p class="text-sm text-gray-600 dark:text-gray-300">Graduated with a C+ (2019)</p>
-      </div>
-
-      <!-- University -->
-      <div class="relative pl-6">
-        <span class="absolute left-[-15px] top-1 w-6 h-6 bg-primary rounded-full"></span>
-        <h3 class="text-lg font-bold text-primary dark:text-accent">BSc. Information Science (IT) – Rongo University</h3>
-        <p class="text-sm text-gray-600 dark:text-gray-300">2020 - Present • Created systems like a Library Management App and Student Feedback Portal</p>
-      </div>
-
-      <!-- Long Jump Africa -->
-      <div class="relative pl-6">
-        <span class="absolute left-[-15px] top-1 w-6 h-6 bg-primary rounded-full"></span>
-        <h3 class="text-lg font-bold text-primary dark:text-accent">IT Intern – Long Jump Africa</h3>
-        <p class="text-sm text-gray-600 dark:text-gray-300">Performed SEO audits, content writing, and managed solar blog CMS</p>
-      </div>
-
-      <!-- Buildena Africa -->
-      <div class="relative pl-6">
-        <span class="absolute left-[-15px] top-1 w-6 h-6 bg-primary rounded-full"></span>
-        <h3 class="text-lg font-bold text-primary dark:text-accent">Content Creator – Buildena Africa</h3>
-        <p class="text-sm text-gray-600 dark:text-gray-300">Created LinkedIn content, carousels, and blog strategy for sustainability and energy</p>
-      </div>
-
-      <!-- Rayshine Tech -->
-      <div class="relative pl-6">
-        <span class="absolute left-[-15px] top-1 w-6 h-6 bg-primary rounded-full"></span>
-        <h3 class="text-lg font-bold text-primary dark:text-accent">Web Assistant – Rayshine Tech</h3>
-        <p class="text-sm text-gray-600 dark:text-gray-300">Worked on WordPress dashboards and integrated forms</p>
-      </div>
-
-      <!-- Freelance Developer -->
-      <div class="relative pl-6">
-        <span class="absolute left-[-15px] top-1 w-6 h-6 bg-primary rounded-full"></span>
-        <h3 class="text-lg font-bold text-primary dark:text-accent">Freelance Web Developer</h3>
-        <p class="text-sm text-gray-600 dark:text-gray-300">Built business and portfolio websites for multiple clients including Naftali Kahwai & Grace Wakesho</p>
-      </div>
-
-      <!-- Current Status -->
-      <div class="relative pl-6">
-        <span class="absolute left-[-15px] top-1 w-6 h-6 bg-primary rounded-full"></span>
-        <h3 class="text-lg font-bold text-primary dark:text-accent">Currently</h3>
-        <p class="text-sm text-gray-600 dark:text-gray-300">Managing client websites, freelancing, and consulting in IT & web development</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-<!-- Testimonials Section -->
-<section id="testimonials" class="...">
 
   <!-- Testimonials Section -->
   <section id="testimonials" class="py-20 bg-white dark:bg-gray-800">
     <div class="container mx-auto px-6">
-      <div class="text-center mb-16" data-aos="fade-up">
+      <div class="text-center mb-16">
         <h2 class="text-3xl font-bold mb-4 text-primary dark:text-white">Client Testimonials</h2>
         <div class="w-20 h-1 bg-primary mx-auto"></div>
       </div>
       
       <!-- Testimonial Carousel -->
       <div class="relative">
-        <div class="testimonial-carousel flex overflow-x-auto snap-x space-x-6 pb-12 px-6" data-aos="fade-up">
+        <div class="testimonial-carousel flex overflow-x-auto snap-x space-x-6 pb-12 px-6">
           <!-- Testimonial 1 -->
-      <!-- Grace Wakesho -->
-<div class="snap-center min-w-[85vw] md:min-w-[50vw] lg:min-w-[30vw]">
-  <div class="bg-secondary dark:bg-gray-700 rounded-xl shadow-lg p-8 h-full flex flex-col">
-    <div class="flex items-center mb-6">
-      <img src="assets/grace-wakesho-testimonial.jpg.jpg" alt="Grace Wakesho" class="w-16 h-16 rounded-full object-cover border-2 border-primary dark:border-accent mr-4">
-      <div>
-        <h4 class="font-bold">Grace Wakesho</h4>
-        <p class="text-sm text-gray-600 dark:text-gray-300">Communications Manager</p>
-      </div>
-    </div>
-    <blockquote class="text-gray-700 dark:text-gray-300 italic mb-4">
-      “Nancy turned my scattered content into a beautiful, organized portfolio. She listened to my ideas, added her creative touch, and built something I’m truly proud to share. Her work ethic and communication were exceptional.”
-    </blockquote>
-  </div>
-</div>
-
-                  </div>
+          <div class="snap-center min-w-[85vw] md:min-w-[50vw] lg:min-w-[30vw]">
+            <div class="bg-secondary dark:bg-gray-700 rounded-xl shadow-lg p-8 h-full flex flex-col">
+              <div class="flex items-center mb-6">
+                <img src="assets/grace-wakesho-testimonial.jpg" alt="Grace Wakesho" class="w-16 h-16 rounded-full object-cover border-2 border-primary dark:border-accent mr-4">
+                <div>
+                  <h4 class="font-bold">Grace Wakesho</h4>
+                  <p class="text-sm text-gray-600 dark:text-gray-300">Communications Manager</p>
                 </div>
               </div>
+              <blockquote class="text-gray-700 dark:text-gray-300 italic mb-4">
+                "Nancy turned my scattered content into a beautiful, organized portfolio. She listened to my ideas, added her creative touch, and built something I'm truly proud to share. Her work ethic and communication were exceptional."
+              </blockquote>
+            </div>
+          </div>
           
           <!-- Testimonial 2 -->
-         <!-- Testimonial: Naftali Kahwai -->
-<div class="snap-center min-w-[85vw] md:min-w-[50vw] lg:min-w-[30vw]">
-  <div class="bg-secondary dark:bg-gray-700 rounded-xl shadow-lg p-8 h-full flex flex-col">
-    <div class="flex items-center mb-6">
-      <img src="assets/testimonials/naftali.webp" alt="Naftali Kahwai" class="w-16 h-16 rounded-full object-cover border-2 border-primary dark:border-accent mr-4" loading="lazy">
-      <div>
-        <h4 class="font-bold">Naftali Kahwai</h4>
-        <p class="text-sm text-gray-600 dark:text-gray-300">Graphic Designer</p>
-      </div>
-    </div>
-    <blockquote class="text-gray-700 dark:text-gray-300 mb-6 flex-grow">
-      "Nancy took my  design samples and transformed them into a clean, professional website that reflects my brand perfectly. Her attention to visual detail and responsiveness made her an ideal partner for creatives like me."
-    </blockquote>
-    <div class="flex justify-between items-center">
-      <span class="text-xs bg-[#1e3a8a]/10 dark:bg-gray-600 px-3 py-1 rounded-full">Portfolio Website</span>
-      <div class="flex space-x-3">
-        <a href="https://naftali-portfolio.netlify.app" class="text-primary dark:text-accent hover:underline text-sm">View Project</a>
-      </div>
-    </div>
-  </div>
-</div>
-      <!-- Carousel Navigation -->
+          <div class="snap-center min-w-[85vw] md:min-w-[50vw] lg:min-w-[30vw]">
+            <div class="bg-secondary dark:bg-gray-700 rounded-xl shadow-lg p-8 h-full flex flex-col">
+              <div class="flex items-center mb-6">
+                <img src="assets/testimonials/naftali.webp" alt="Naftali Kahwai" class="w-16 h-16 rounded-full object-cover border-2 border-primary dark:border-accent mr-4" loading="lazy">
+                <div>
+                  <h4 class="font-bold">Naftali Kahwai</h4>
+                  <p class="text-sm text-gray-600 dark:text-gray-300">Graphic Designer</p>
+                </div>
+              </div>
+              <blockquote class="text-gray-700 dark:text-gray-300 mb-6 flex-grow">
+                "Nancy took my design samples and transformed them into a clean, professional website that reflects my brand perfectly. Her attention to visual detail and responsiveness made her an ideal partner for creatives like me."
+              </blockquote>
+              <div class="flex justify-between items-center">
+                <span class="text-xs bg-[#1e3a8a]/10 dark:bg-gray-600 px-3 py-1 rounded-full">Portfolio Website</span>
+                <div class="flex space-x-3">
+                  <a href="https://naftali-portfolio.netlify.app" class="text-primary dark:text-accent hover:underline text-sm">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Carousel Navigation -->
         <button class="carousel-prev absolute left-0 top-1/2 -translate-y-1/2 bg-white dark:bg-gray-700 p-3 rounded-full shadow-md z-10 -ml-4">
           <i class="fas fa-chevron-left text-[#1e3a8a] dark:text-white"></i>
         </button>
@@ -489,23 +433,25 @@
           <i class="fas fa-chevron-right text-[#1e3a8a] dark:text-white"></i>
         </button>
       </div>
+    </div>
+  </section>
 
   <!-- Contact Section -->
   <section id="contact" class="py-20 bg-secondary dark:bg-dark">
     <div class="container mx-auto px-6">
-      <div class="text-center mb-16" data-aos="fade-up">
+      <div class="text-center mb-16">
         <h2 class="text-3xl font-bold mb-4 text-primary dark:text-white">Get In Touch</h2>
         <p class="max-w-2xl mx-auto text-gray-600 dark:text-gray-300">Have a project in mind or want to discuss potential opportunities?</p>
       </div>
       
       <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
         <!-- Contact Form -->
-        <div class="bg-white dark:bg-gray-700 rounded-xl shadow-lg p-8" data-aos="fade-right">
+        <div class="bg-white dark:bg-gray-700 rounded-xl shadow-lg p-8">
           <h3 class="text-xl font-bold mb-6 text-primary dark:text-white">Send Me a Message</h3>
           <form action="https://formspree.io/f/xgvyjkwv" method="POST" class="space-y-4">
-            <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 border rounded focus:ring-2 focus:ring-primary focus:border-transparent">
-            <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 border rounded focus:ring-2 focus:ring-primary focus:border-transparent">
-            <textarea name="message" placeholder="Your Message" rows="5" required class="w-full p-3 border rounded focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
+            <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 border rounded focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-600 dark:border-gray-500">
+            <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 border rounded focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-600 dark:border-gray-500">
+            <textarea name="message" placeholder="Your Message" rows="5" required class="w-full p-3 border rounded focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-600 dark:border-gray-500"></textarea>
             <button type="submit" class="bg-primary text-white px-6 py-3 rounded-full font-bold hover:bg-accent transition w-full">
               Send Message
             </button>
@@ -513,7 +459,7 @@
         </div>
         
         <!-- Contact Info -->
-        <div class="space-y-8" data-aos="fade-left">
+        <div class="space-y-8">
           <div>
             <h3 class="text-xl font-bold mb-4 text-primary dark:text-white">Contact Information</h3>
             <div class="space-y-4">
@@ -558,7 +504,7 @@
               <a href="https://github.com/NancyNdanu" target="_blank" class="social-icon bg-[#1e3a8a]/10 dark:bg-gray-600 p-3 rounded-full text-primary dark:text-accent hover:bg-[#1e3a8a]/20 dark:hover:bg-gray-500 transition">
                 <i class="fab fa-github"></i>
               </a>
-              <a href="https://wa.me/254701976329?text==Hi%20Nancy%2C%20I%20visited%20your%20portfolio%20and%20want%20to%20connect."target="_blank" class="social-icon bg-[#1e3a8a]/10 dark:bg-gray-600 p-3 rounded-full text-primary dark:text-accent hover:bg-[#1e3a8a]/20 dark:hover:bg-gray-500 transition">
+              <a href="https://wa.me/254701976329?text==Hi%20Nancy%2C%20I%20visited%20your%20portfolio%20and%20want%20to%20connect." target="_blank" class="social-icon bg-[#1e3a8a]/10 dark:bg-gray-600 p-3 rounded-full text-primary dark:text-accent hover:bg-[#1e3a8a]/20 dark:hover:bg-gray-500 transition">
                 <i class="fab fa-whatsapp"></i>
               </a>
             </div>
@@ -582,33 +528,6 @@
     </div>
   </footer>
 
-  <!-- Testimonial Form Modal -->
-  <div id="testimonial-modal" class="fixed inset-0 bg-black/50 z-50 hidden items-center justify-center p-6">
-    <div class="bg-white dark:bg-gray-800 rounded-xl max-w-md w-full p-8 relative">
-      <button id="close-testimonial-form" class="absolute top-4 right-4 text-gray-500 dark:text-gray-400">
-        <i class="fas fa-times text-2xl"></i>
-      </button>
-      <h3 class="text-xl font-bold mb-6">Share Your Experience</h3>
-      <form id="testimonial-form" class="space-y-4">
-        <input type="text" placeholder="Your Name" required class="w-full p-3 border rounded focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:border-gray-600">
-        <input type="text" placeholder="Your Title/Company" class="w-full p-3 border rounded focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:border-gray-600">
-        <textarea placeholder="Your Testimonial" rows="5" required class="w-full p-3 border rounded focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:border-gray-600"></textarea>
-        <div class="flex items-center justify-between">
-          <div class="rating-stars">
-            <span class="star" data-value="1">★</span>
-            <span class="star" data-value="2">★</span>
-            <span class="star" data-value="3">★</span>
-            <span class="star" data-value="4">★</span>
-            <span class="star" data-value="5">★</span>
-          </div>
-          <button type="submit" class="bg-primary text-white px-6 py-2 rounded-full hover:bg-accent transition">
-            Submit
-          </button>
-        </div>
-      </form>
-    </div>
-  </div>
-
   <!-- JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
@@ -620,28 +539,57 @@
     const darkIcon = document.getElementById('dark-icon');
     const lightIcon = document.getElementById('light-icon');
     
-    darkModeToggle.addEventListener('click', () => {
-      document.documentElement.classList.toggle('dark');
-      localStorage.setItem('darkMode', document.documentElement.classList.contains('dark'));
-      darkIcon.classList.toggle('hidden');
-      lightIcon.classList.toggle('hidden');
-    });
+    if (darkModeToggle) {
+      darkModeToggle.addEventListener('click', () => {
+        document.documentElement.classList.toggle('dark');
+        localStorage.setItem('darkMode', document.documentElement.classList.contains('dark'));
+        darkIcon.classList.toggle('hidden');
+        lightIcon.classList.toggle('hidden');
+      });
+    }
     
     // Set initial dark mode from localStorage
     if (localStorage.getItem('darkMode') === 'true' || 
         (!localStorage.getItem('darkMode') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       document.documentElement.classList.add('dark');
-      darkIcon.classList.add('hidden');
-      lightIcon.classList.remove('hidden');
+      if (darkIcon) darkIcon.classList.add('hidden');
+      if (lightIcon) lightIcon.classList.remove('hidden');
     }
     
     // Mobile Menu Toggle
-    <script>
-  const mobileMenuButton = document.getElementById('mobile-menu-button');
-  const mobileMenu = document.getElementById('mobile-menu');
-  if (mobileMenuButton && mobileMenu) {
-    mobileMenuButton.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    if (mobileMenuButton && mobileMenu) {
+      mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+    
+    // Scroll Progress Indicator
+    window.addEventListener('scroll', () => {
+      const scrollProgress = document.getElementById('scroll-progress');
+      if (scrollProgress) {
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const progress = (scrollTop / scrollHeight) * 100;
+        scrollProgress.style.width = `${progress}%`;
+      }
     });
-  }
-</script>
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          window.scrollTo({
+            top: target.offsetTop - 80,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
